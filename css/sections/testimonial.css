@@ -1,0 +1,132 @@
+.testimonial__container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    text-align: center;
+
+    padding: 80px 0 100px;
+}
+
+.testimonial ul {
+    display: flex;
+    gap: 29px;
+}
+
+.testimonial ul li {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    padding: 40px;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0px 8px 16px -6px rgba(24, 39, 75, 0.25);
+
+    transition: .2s;
+}
+
+.testimonial ul li svg {
+    position: absolute;
+    top: 26%;
+    left: 55%;
+}
+
+.testimonial ul li span {
+    height: 2px;
+    width: 32%;
+    background: var(--black);
+}
+
+.testimonial ul li p {
+    color: var(--neutral);
+}
+
+.testimonial ul li h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.testimonial ul li h5 {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--zink-500);
+    font-weight: 600;
+}
+
+.testimonial ul li:hover {
+    background: var(--black);
+}
+
+.testimonial ul li:hover svg circle {
+    fill: var(--white);
+}
+
+.testimonial ul li:hover svg path {
+    fill: var(--black);
+}
+
+.testimonial ul li:hover p {
+    color: var(--white);
+}
+
+.testimonial ul li:hover span {
+    background: var(--white);
+}
+
+.testimonial ul li:hover h4 {
+    color: var(--white);
+}
+
+.testimonial ul li:hover h5 {
+    color: var(--white);
+}
+
+@media (max-width: 1240px) {
+    .testimonial__container {
+        gap: 65px;
+        
+        padding: 75px 0 75px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .testimonial__container {
+        gap: 50px;
+        
+        padding: 70px 0;
+        max-width: 50%;
+    }
+
+    .testimonial ul {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .testimonial ul li {
+        gap: 24px;
+        
+        padding: 24px;
+    }
+}
+
+@media (max-width: 840px) {
+    .testimonial__container {
+        gap: 55px;
+        
+        padding: 65px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .testimonial__container {
+        gap: 40px;
+        
+        padding: 60px 0;
+        max-width: 90%;
+    }
+}

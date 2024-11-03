@@ -1,0 +1,125 @@
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 80px 0;
+}
+
+.skills h2 {
+    text-align: center;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: repeat(2, minmax(160px, 186px));
+    gap: 40px 71.5px;
+
+    padding: 20px 0;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    cursor: pointer;
+
+    border: 2px solid var(--black);
+    background: var(--white);
+    border-radius: 4px;
+
+    transition: .2s;
+}
+
+.skill svg {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.skill span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skill:hover {
+    color: var(--white);
+
+    background: var(--black);
+}
+
+.skill:hover svg path:nth-child(1) {
+    fill: var(--white);
+}
+
+.skill:hover svg path:nth-child(2) {
+    fill: var(--black);
+}
+
+@media (max-width: 1340px) {
+    .skills__list {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .skill {
+        gap: 28px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .skills__container {
+        gap: 20px;
+
+        padding: 40px 0;
+    }
+
+    .skills__list {
+        gap: 30px;
+    }
+
+    .skill {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .skills__list {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 1089px) {
+    .skills__list {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1034px) {
+    .skills__list {
+        grid-template-rows: repeat(3, minmax(160px, 186px));
+    }
+}
+
+@media (max-width: 822px) {
+    .skills__list {
+        grid-template-rows: repeat(4, minmax(160px, 186px));
+    }
+}
+
+@media (max-width: 569px) {
+    .skills__list {
+        grid-template-rows: repeat(5, minmax(160px, 186px));
+    }
+}
+
+@media (max-width: 373px) {
+    .skills__list {
+        grid-template-rows: repeat(6, minmax(160px, 186px));
+    }
+}

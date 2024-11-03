@@ -1,0 +1,148 @@
+.projects {
+    color: var(--white);
+
+    background: var(--black);
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    padding: 80px 0;
+}
+
+.projects__container > h2 {
+    text-align: center;
+}
+
+.projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 4.76fr 5.24fr;
+    grid-template-rows: 530px;
+    align-items: center;
+    gap: 104px;
+}
+
+.project__img {
+    border-radius: 19px;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.project:nth-child(1) .project__img {
+    background-image: url("/assets/projects/01.jpg");
+}
+
+.project:nth-child(2) .project__img {
+    background-image: url("/assets/projects/02.jpg");
+}
+
+.project:nth-child(3) .project__img {
+    background-image: url("/assets/projects/03.jpg");
+}
+
+.project:nth-child(even) .project__img {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.project:nth-child(even) .project__text {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.project__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.project__text h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.project__text p {
+    color: var(--zink-500);
+}
+
+@media (max-width: 1240px) {
+    .projects__container {
+        padding: 75px 0;
+
+        gap: 85px;
+    }
+    
+    .project {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 1187px) {
+
+}
+
+@media (max-width: 1040px) {
+    .projects__container {
+        padding: 70px 0;
+
+        gap: 70px;
+    }
+
+    .project {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 840px) {
+    .projects__container {
+        padding: 65px 0;
+
+        gap: 55px;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+        grid-template-rows: 343px 1fr;
+    }
+
+    .project:nth-child(even) .project__img {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    
+    .project:nth-child(even) .project__text {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .projects__list {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 640px) {
+    .projects__container {
+        gap: 40px;
+        
+        padding: 60px 0 40px;
+    }
+
+    .project {
+        gap: 28px;
+    }
+
+    .projects__list {
+        gap: 28px;
+    }
+}

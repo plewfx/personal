@@ -1,0 +1,39 @@
+.footer {
+    color: var(--white);
+
+    background: var(--black);
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 24px 0;
+}
+
+.footer__container div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    text-align: end;
+}
+
+.footer__container div p {
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .footer__container {
+        padding: 20px 0;
+    }
+
+    .footer__container div {
+        gap: 0;
+    }
+
+    .footer__container div p {
+        font-size: 12px;
+    }
+}
