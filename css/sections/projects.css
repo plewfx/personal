@@ -38,15 +38,15 @@
 }
 
 .project:nth-child(1) .project__img {
-    background-image: url("/assets/projects/01.jpg");
+    background-image: url("assets/projects/01.jpg");
 }
 
 .project:nth-child(2) .project__img {
-    background-image: url("/assets/projects/02.jpg");
+    background-image: url("assets/projects/02.jpg");
 }
 
 .project:nth-child(3) .project__img {
-    background-image: url("/assets/projects/03.jpg");
+    background-image: url("assets/projects/03.jpg");
 }
 
 .project:nth-child(even) .project__img {
